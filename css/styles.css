@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.imagem-container {
+  width: 1000%; /* Ajusta automaticamente ao tamanho da tela */
+  max-width: 1200px; /* Limita o tamanho máximo do container */
+  margin: 1 auto; /* Centraliza o container na tela */
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 0.6s;
+}
+
+body {
+  background-image: url('/imag/cauculadora.png'); /* Corrigir caminho conforme necessário */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+}
+
+.calculadora{
+  position: absolute;
+  background-color: rgba(60, 139, 212, 0.8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.botao{
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 3px;
+  background-color: rgb(94, 91, 91);
+  border: none;
+  color: #fff;
+}
+
+.botao:hover{
+  background-color: rgb(0, 0, 0);
+}
+
+#resultado{
+  background-color: rgb(255, 255, 255);
+  width: 207px;
+  height: 30px;
+  margin: 5px;
+  font-size: 25px;
+  color: black;
+  text-align: right;
+  padding: 5px;
+}
+
+.numeros {
+  position: absolute;
+  left: 20px; /* Ajuste conforme necessário */
+  top: 20px;
+}
+
